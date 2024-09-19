@@ -1,0 +1,61 @@
+* {
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.App {
+    background-color: bisque;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: aqua;
+    width: 500px;
+    padding: 50px;
+    border-radius: 20%;
+    box-shadow: 0 4px 2px 0 white;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+
+    color: blue;
+
+}
+
+.header h1:hover {
+    text-decoration: underline;
+    color: brown;
+}
+.total{
+    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px 0;
+}
+.total h2{
+  color: red;
+  font-size: 40px;
+}
+.total p{
+    text-decoration: underline;
+    color: green;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.button{
+    display: flex;
+    justify-content: space-between;
+}
