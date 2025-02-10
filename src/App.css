@@ -1,61 +1,100 @@
 * {
     font-family: "Protest Guerrilla", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .App {
     background-color: bisque;
     width: 100%;
-    height: 800px;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .container {
     background-color: aqua;
-    width: 500px;
-    padding: 50px;
-    border-radius: 20%;
-    box-shadow: 0 4px 2px 0 white;
-}
-
-.header {
+    width: 90%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .header h1 {
-
     color: blue;
-
+    font-size: 24px;
 }
 
 .header h1:hover {
     text-decoration: underline;
     color: brown;
 }
-.total{
+
+.total {
     background-color: bisque;
     display: flex;
     justify-content: center;
     flex-direction: column;
     margin: 20px;
     text-align: center;
-    box-shadow: 0 4px 6px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
 }
-.total h2{
-  color: red;
-  font-size: 40px;
+
+.total h2 {
+    color: red;
+    font-size: 36px;
 }
-.total p{
+
+.total p {
     text-decoration: underline;
     color: green;
 }
-.input{
+
+.input {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    gap: 15px;
+    margin: 20px 0;
 }
-.button{
+
+.button {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.button button {
+    flex: 1;
+    min-width: 120px;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    .total h2 {
+        font-size: 28px;
+    }
+
+    .button {
+        flex-direction: column;
+    }
+
+    .button button {
+        width: 100%;
+    }
 }
